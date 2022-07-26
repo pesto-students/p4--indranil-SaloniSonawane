@@ -87,7 +87,7 @@ Communication Starts (Request Response Process)
 
 Finally, the connection is built between client and server. Now, they both can communicate with each other and share information. After successful connection, browser (client) sends a request to a server that I want this content. The server knows everything of what response it should send for every request. Hence, the server responds back. This response contains every information that you requested like web page, status-code, cache-control, etc. Now, the browser renders the content that has been requested.
 
-
+__________________________________________________________________________________________________________________________________________________________
 
 The browser's high level structure:
 The browser's main components are:
