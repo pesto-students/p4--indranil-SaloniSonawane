@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>Dummy Website</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>"Neque porro <br> quisquam est qui, adipisci velit..."</h1>
+                <span class="square">
+                </span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <button class="common-button">Read More</button>
+                <div class="line">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                    content here', making it look like readable English.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up</h1>
+                <form>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Name">
+                    <input type="password" placeholder="Enter Password">
+                    <div class='btn-box'>
+                        <button class="common-button">Sign Up</button>
+                        <button class="common-button">Start Free Trial</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contact.png">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav")
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            } else {
+                sideNav.style.right = "-250px"
+            }
+        }
+        var scroll = new smoothScroll('a[href*="#"]');
+    </script>
+
+</body>
+
+</html>
