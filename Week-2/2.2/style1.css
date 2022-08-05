@@ -1,0 +1,85 @@
+body {
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.hi {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    top: 50%;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(0);
+    transition-duration: 2s;
+}
+
+.main:hover .red {
+    transform: rotate(90deg);
+    transition-duration: 2s;
+    transform-origin: top left;
+    transition: transform 2s linear;
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
+}
+
+.main:hover .yellow {
+    transform: rotate(-90deg);
+    transition-duration: 2s;
+    transform-origin: top right;
+    transition: transform 2s linear;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+    top: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
+}
+
+.main:hover .blue {
+    transform: rotate(-90deg);
+    transition-duration: 2s;
+    transform-origin: bottom left;
+    transition: transform 2s linear;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
+}
+
+.main:hover .green {
+    transform: rotate(90deg);
+    transition-duration: 2s;
+    transform-origin: bottom right;
+    transition: transform 2s linear;
+}
